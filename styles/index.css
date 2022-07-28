@@ -1,0 +1,216 @@
+/* global css
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+ *{
+    padding: 0;margin: 0;box-sizing: border-box;
+ }
+ body{
+   background-color: yellow;
+   width: 100vw;
+   overflow-x: hidden;
+ }
+ html{
+    font-size: 62.5%;
+    font-family: 'Righteous', cursive;
+ }
+ header{
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.705);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    align-items: center;
+ }
+ header > a >.logo{
+    height: 6vh;
+    border-radius: 50%;
+ }
+
+.nav-link{
+   font-size: 1.5rem;
+   color: black;
+   transition: all 0.5s ;
+}
+.nav-link:hover{
+   color: red;
+}
+.nav-link:active{
+   color: yellow;
+}
+
+nav > ul {
+   display: flex;
+   gap: 1rem;
+ }
+ a{
+   text-decoration: none;
+ }
+ li{
+   list-style: none;
+ }
+ /* main styling */
+ main{
+    height: 70vh;
+    width: 100vw;
+    background-image: url('..//images/hot-tasty-pizza\ \(1\).jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ main > h1{
+   font-size: 4rem;
+   color: #fff;
+   text-align: center;
+   text-shadow: 1rem 1rem 1rem black;
+}
+main > p{
+   font-size: 1.5rem;
+   text-align: center;
+   color: #fff;
+   max-width: 800px;
+   text-shadow: 1rem 1rem 1rem black;
+ }
+ div.btn{
+   border: 3px solid #fff;
+   padding: 1rem 3rem;
+   font-size: 1.8rem;
+   transition: all 0.5s;
+ }
+ div.btn:hover{
+   background-color: rgba(255, 255, 255, 0.664);
+ }
+
+ /* our services */
+ section.services , section.our-clients{
+   width: 80%;
+   margin: auto;
+padding: 1rem;
+ }
+ .title{
+   color: #fff;
+   font-size: 3rem;
+   text-align: center;
+ }
+ .cards{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+ }
+ .card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: fit-content;
+   padding: 1rem;
+ }
+ .card > img{
+   width: 80%;
+ }
+ .card{
+   background-color: #fff;
+   border-radius: 5px;
+ }
+ .card-data{
+   font-size: 1.3rem;
+ }
+ .card-title{
+   font-size: 1.6rem;
+ }
+ .card-2 > img{
+width: 100%;
+ }
+ .card-2{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ /* footer style */
+ footer{
+   background-color: black;
+   padding: 1rem;
+ }
+ footer > p{
+text-align: center;
+color: #fff;
+font-size: 2rem;
+ }
+ .form{
+   width: 50%;
+   margin: auto;
+   min-width: 300px;
+   background-color: #fff;
+ }
+ .frm{
+   padding: 2rem;
+   gap: 1rem;
+   width: 100%;
+   height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+ }
+  label{
+font-size: 1.5rem;
+ }
+ .inp{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ input,textarea{
+   text-align: center;
+   padding: 1rem;
+ }
+
+ button{
+   width: 200px;
+   border: 1rem solid rgb(185, 183, 183);
+   background-color: rgb(59, 222, 59);
+   padding: 1rem;
+ }
+
+ /* media queries */
+
+ @media only screen and (max-width:580px){
+.cards{
+   flex-direction: column;
+}
+.card-2 > img{
+   width: 50%;
+}
+.card > img {
+   width: 40%;
+   min-width: 200px;
+}
+.form{
+   width: 99%;
+}
+}
+
+
+
+ @media only screen and (max-width:650px){
+   section.services, section.our-clients {
+      width: 100%;
+  }
+   
+} 
+@media only screen and (max-width:800px){
+   .form{
+      width: 99%;
+   }
+   
+   
+} 
